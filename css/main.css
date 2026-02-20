@@ -1,0 +1,1086 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --blue0: #3774a9;
+  --blue1: #76a7d2;
+  --blue2: #8cb5d9;
+  --blue3: #b2cee6;
+  --blue4: #d7e6f3;
+  --blue5: #e7f0f8;
+  --white: #f7f8f9;
+  --black: #1f2a37;
+  --gray0: #4d4d4d;
+  --gray1: #878787;
+  --gray2: #afafaf;
+  --gray3: #e6e6e6;
+  --gray4: #f3f5f6;
+  --gray-stroke: rgba(195, 195, 195, 0.1);
+  --light-blue-gray: #e6e9ec;
+  --light-salmon: #e6b2b2;
+  --salmon: #d98c8c;
+  --bg: #e6e6e7;
+  --fw400: 400;
+  --fw500: 500;
+  --fw600: 600;
+  --fw700: 700;
+  --fw800: 800;
+  --border-radius: 8px;
+  --radius4: 4px;
+  --radius10: 10px;
+  --radius100: 100px;
+  --blue-inner-shadow: 4px 4px 4px 0 rgba(255, 255, 255, 0.7) inset,
+    -2px -2px 4px 0 rgba(118, 167, 210, 0.54) inset,
+    2px 2px 4px 0 rgba(118, 167, 210, 0.85) inset;
+  --gray-inner-shadow: 2px 4px 4px 0 rgba(195, 195, 195, 0.43),
+    -2px -2px 8px 0 rgba(195, 195, 195, 0.5) inset,
+    2px 2px 8px 0 rgba(195, 195, 195, 0.2) inset;
+  --box-shadow: 0 4px 4px 0 rgba(209, 209, 209, 0.25);
+  --transition: 0.4s all ease;
+  --letter-spacing: 1.1px;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: var(--fw400);
+  background-color: var(--light-blue-gray);
+  width: 80vw;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 80px auto;
+}
+
+main {
+  margin-top: 4px;
+}
+
+section {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  border: 1px solid var(--gray3);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f1f1f1;
+  border-bottom: 2px solid var(--gray3);
+  position: relative;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: var(--letter-spacing);
+  color: var(--gray0);
+  font-weight: var(--fw600);
+}
+
+h2{
+    font-size: 14px;
+    font-weight: var(--fw400);
+    color: var(--black);
+    background-color: #f1f1f1;
+    padding: 2px 16px;
+border-radius: var(--border-radius);
+    position: absolute;
+    top: -16px;
+    left: 16px;
+}
+/* ========== 📌BUTTONS ========== */
+/* ***** 🔷BLUE FILLED ***** */
+/* 📌blue filled button */
+
+.btn-filled-blue {
+  border: none;
+  color: var(--blue0);
+  font-family: var(--primary-font);
+  background-color: var(--blue4);
+  padding: 16px 32px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--blue-inner-shadow);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-filled-blue:hover {
+  background-color: var(--blue3);
+}
+
+/* 📌blue filled button with icon */
+
+.btn-filled-blue-icon {
+  border: none;
+  color: var(--blue0);
+  font-family: var(--primary-font);
+  background-color: var(--blue4);
+  padding: 16px 26px 16px 32px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--blue-inner-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-filled-blue-icon:hover {
+  background-color: var(--blue3);
+}
+
+/* 📌small blue filled button */
+
+.btn-filled-blue-small {
+  border: none;
+  color: var(--blue0);
+  font-family: var(--primary-font);
+  background-color: var(--blue4);
+  padding: 6px 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--blue-inner-shadow);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-filled-blue-small:hover {
+  background-color: var(--blue3);
+}
+
+/* 📌small blue filled button with icon */
+
+.btn-filled-blue-small-icon {
+  border: none;
+  color: var(--blue0);
+  font-family: var(--primary-font);
+  background-color: var(--blue4);
+  padding: 6px 10px 6px 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--blue-inner-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-filled-blue-small-icon:hover {
+  background-color: var(--blue3);
+}
+
+/* 📌blue filled square icon */
+
+.blue-icon-square {
+  background-color: var(--blue4);
+  border: none;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--blue-inner-shadow);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blue-icon-square:hover {
+  background-color: var(--blue3);
+}
+
+/* 📌small blue filled square icon */
+
+.blue-icon-square-small {
+  background-color: var(--blue4);
+  border: none;
+  padding: 8px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--blue-inner-shadow);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blue-icon-square-small:hover {
+  background-color: var(--blue3);
+}
+
+/* 📌blue filled circle icon */
+
+.blue-icon-circle {
+  background-color: var(--blue4);
+  border: none;
+  padding: 16px;
+  border-radius: var(--radius100);
+  box-shadow: var(--blue-inner-shadow);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blue-icon-circle:hover {
+  background-color: var(--blue3);
+}
+
+/* 📌small blue filled circle icon */
+
+.blue-icon-circle-small {
+  background-color: var(--blue4);
+  border: none;
+  padding: 8px;
+  border-radius: var(--radius100);
+  box-shadow: var(--blue-inner-shadow);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blue-icon-circle-small:hover {
+  background-color: var(--blue3);
+}
+
+/* ***** 🔷BLUE OUTLINED ***** */
+/* 📌blue outlined button */
+
+.btn-outlined-blue {
+  border: none;
+  color: var(--blue0);
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 16px 32px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--blue0);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outlined-blue:hover {
+  background-color: var(--blue5);
+}
+
+/* 📌blue outlined button with icon */
+
+.btn-outlined-blue-icon {
+  border: none;
+  color: var(--blue0);
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 16px 26px 16px 32px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--blue0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outlined-blue-icon:hover {
+  background-color: var(--blue5);
+}
+
+/* 📌small blue outlined button */
+
+.btn-outlined-blue-small {
+  border: none;
+  color: var(--blue0);
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 6px 16px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--blue0);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outlined-blue-small:hover {
+  background-color: var(--blue5);
+}
+
+/* 📌small blue outlined button with icon */
+
+.btn-outlined-blue-small-icon {
+  border: none;
+  color: var(--blue0);
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 6px 10px 6px 16px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--blue0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outlined-blue-small-icon:hover {
+  background-color: var(--blue5);
+}
+
+/* 📌blue outlined square icon */
+
+.blue-icon-square-outlined {
+  background-color: transparent;
+  border: 1.5px solid var(--blue0);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blue-icon-square-outlined:hover {
+  background-color: var(--blue5);
+}
+
+/* 📌small blue outlined square icon */
+
+.blue-icon-square-outlined-small {
+  background-color: transparent;
+  border: 1.5px solid var(--blue0);
+  padding: 8px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blue-icon-square-outlined-small:hover {
+  background-color: var(--blue5);
+}
+
+/* 📌blue outlined circle icon */
+
+.blue-icon-outlined-circle {
+  background-color: transparent;
+  border: 1.5px solid var(--blue0);
+  padding: 16px;
+  border-radius: var(--radius100);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blue-icon-outlined-circle:hover {
+  background-color: var(--blue5);
+}
+
+/* 📌small blue outlined circle icon */
+
+.blue-icon-circle-outlined-small {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: var(--radius100);
+  border: 1.5px solid var(--blue0);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blue-icon-circle-outlined-small:hover {
+  background-color: var(--blue5);
+}
+
+/* ***** 🔷GRAY FILLED ***** */
+
+/* 📌gray filled button */
+
+.btn-filled-gray {
+  border: none;
+  color: var(--gray1);
+  font-family: var(--primary-font);
+  background-color: var(--white);
+  padding: 16px 32px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--gray-inner-shadow);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-filled-gray:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* 📌gray filled button with icon */
+
+.btn-filled-gray-icon {
+  border: none;
+  color: var(--gray1);
+  font-family: var(--primary-font);
+  background-color: var(--white);
+  padding: 16px 26px 16px 32px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--gray-inner-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-filled-gray-icon:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* 📌small gray filled button */
+
+.btn-filled-gray-small {
+  border: none;
+  color: var(--gray1);
+  font-family: var(--primary-font);
+  background-color: var(--white);
+  padding: 6px 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--gray-inner-shadow);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-filled-gray-small:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* 📌small gray filled button with icon */
+
+.btn-filled-gray-small-icon {
+  border: none;
+  color: var(--gray1);
+  font-family: var(--primary-font);
+  background-color: var(--white);
+  padding: 6px 10px 6px 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--gray-inner-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-filled-gray-small-icon:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* 📌gray filled square icon */
+
+.gray-icon-square {
+  background-color: var(--white);
+  border: none;
+  padding: 16px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--gray-inner-shadow);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gray-icon-square:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* 📌small gray filled square icon */
+
+.gray-icon-square-small {
+  background-color: var(--white);
+  border: none;
+  padding: 8px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--gray-inner-shadow);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gray-icon-square-small:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* 📌gray filled circle icon */
+
+.gray-icon-circle {
+  background-color: var(--white);
+  border: none;
+  padding: 16px;
+  border-radius: var(--radius100);
+  box-shadow: var(--gray-inner-shadow);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gray-icon-circle:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* 📌small gray filled circle icon */
+
+.gray-icon-circle-small {
+  background-color: var(--white);
+  border: none;
+  padding: 8px;
+  border-radius: var(--radius100);
+  box-shadow: var(--gray-inner-shadow);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gray-icon-circle-small:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* ***** 🔷GRAY OUTLINED ***** */
+/* 📌gray outlined button */
+
+.btn-outlined-gray {
+  color: var(--gray1);
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 16px 32px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--gray1);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outlined-gray:hover {
+  background-color: var(--gray3);
+}
+
+/* 📌gray outlined button with icon */
+
+.btn-outlined-gray-icon {
+  color: var(--gray1);
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 16px 26px 16px 32px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--gray1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outlined-gray-icon:hover {
+  background-color: var(--gray3);
+}
+
+/* 📌small gray outlined button */
+
+.btn-outlined-gray-small {
+  color: var(--gray1);
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 6px 16px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--gray1);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outlined-gray-small:hover {
+  background-color: var(--gray3);
+}
+
+/* 📌small gray outlined button with icon */
+
+.btn-outlined-gray-small-icon {
+  border: none;
+  color: var(--gray1);
+  font-family: var(--primary-font);
+  background-color: transparent;
+  padding: 6px 10px 6px 16px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--gray1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outlined-gray-small-icon:hover {
+  background-color: var(--gray3);
+}
+
+/* 📌gray outlined square icon */
+
+.gray-icon-square-outlined {
+  background-color: transparent;
+  border: 1.5px solid var(--gray1);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gray-icon-square-outlined:hover {
+  background-color: var(--gray3);
+}
+
+/* 📌small gray outlined square icon */
+
+.gray-icon-square-outlined-small {
+  background-color: transparent;
+  border: 1.5px solid var(--gray1);
+  padding: 8px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gray-icon-square-outlined-small:hover {
+  background-color: var(--gray3);
+}
+
+/* 📌gray outlined circle icon */
+
+.gray-icon-outlined-circle {
+  background-color: transparent;
+  border: 1.5px solid var(--gray1);
+  padding: 16px;
+  border-radius: var(--radius100);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gray-icon-outlined-circle:hover {
+  background-color: var(--gray3);
+}
+
+/* 📌small gray outlined circle icon */
+
+.gray-icon-circle-outlined-small {
+  background-color: transparent;
+  padding: 8px;
+  border-radius: var(--radius100);
+  border: 1.5px solid var(--gray1);
+  cursor: pointer;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gray-icon-circle-outlined-small:hover {
+  background-color: var(--gray3);
+}
+
+/* ========== 🔷SMALL CHIPS ========== */
+
+/* 📌light blue chip */
+
+.light-blue-chip {
+  background-color: var(--blue4);
+  border-radius: var(--radius4);
+  padding: 4px 8px;
+  color: var(--blue0);
+  border: 1px solid var(--blue1);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.light-blue-chip:hover {
+  background-color: var(--blue3);
+}
+
+/* 📌dark blue chip */
+
+.dark-blue-chip {
+  background-color: var(--blue0);
+  border-radius: var(--radius4);
+  padding: 4px 8px;
+  color: var(--white);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.dark-blue-chip:hover {
+  background-color: var(--blue1);
+}
+
+/* 📌outlined chip */
+
+.outlined-chip {
+  background-color: transparent;
+  border-radius: var(--radius4);
+  padding: 4px 8px;
+  border: 1.5px solid var(--blue0);
+  color: var(--blue0);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.outlined-chip:hover {
+  background-color: var(--light-blue-gray);
+}
+
+/* ========== 🔷SEARCH FIELD ========== */
+
+.section__search-box{
+    display: flex;
+    gap: 24px;
+}
+
+/* 📌search box */
+
+.search-box{
+    position:relative;
+}
+
+.search{
+  color: var(--gray2);
+  width: 260px;
+  height: 44px;
+  padding: 2px 2px 2px 16px;
+  border-radius: var(--radius100);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  border: none;
+  font-family: var(--primary-font);
+  color: var(--gray1);
+  font-size: 16px;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.search::placeholder{
+    color: var(--gray2);
+}
+
+.search-icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: url("../assets/icons/Search.svg"), var(--blue4);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: var(--radius100);
+  box-shadow: var(--blue-inner-shadow),var(--box-shadow);
+position: absolute;
+top: 2px;
+right: 2px;
+cursor:pointer;
+transition: var(--transition);
+}
+
+.search-icon:hover{
+    background: url("../assets/icons/Search.svg"), var(--blue1);
+     background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 📌subscribe field */
+
+.subscribe-field{
+    position:relative;
+}
+
+.subscribe{
+  color: var(--gray2);
+  width: 260px;
+  height: 44px;
+  padding: 2px 2px 2px 16px;
+  border-radius: var(--radius100);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  border: none;
+  font-family: var(--primary-font);
+  color: var(--gray1);
+  font-size: 16px;
+}
+
+.subscribe:focus{
+    outline: none;
+}
+
+.subscribe::placeholder{
+    color: var(--gray2);
+}
+
+.send-icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background: url("../assets/icons/Send.svg"), var(--blue4);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: var(--radius100);
+  box-shadow: var(--blue-inner-shadow),var(--box-shadow);
+position: absolute;
+top: 2px;
+right: 2px;
+cursor:pointer;
+transition: var(--transition);
+}
+
+.send-icon:hover{
+    background: url("../assets/icons/Send.svg"), var(--blue1);
+     background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ========== 🔷POPUP MODALS ========== */
+
+/* 📌blue popup */
+
+.blue-popup{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 16px 24px 16px;
+    background-color: var(--blue5);
+    border-radius: var(--radius10);
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+    position:relative;
+    box-shadow: var(--box-shadow);
+}
+
+.blue-check-circle{
+    width: 64px;
+    height: 64px;
+background: url('../assets/icons/check_blue.svg'), var(--blue4);
+background-repeat: no-repeat;
+background-position: center;
+  padding: 16px;
+  border-radius: var(--radius100);
+  box-shadow: var(--blue-inner-shadow);
+  font-weight: 500;
+}
+
+.popup-p{
+    color: var(--blue0);
+}
+
+.close-btn{
+    cursor:pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* 📌gray popup */
+
+.gray-popup{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 16px 24px 16px;
+    background-color: var(--white);
+    border-radius: var(--radius10);
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+    position:relative;
+    box-shadow: var(--box-shadow);
+}
+
+.gray-check-circle{
+    width: 64px;
+    height: 64px;
+background: url('../assets/icons/check_gray.svg'), var(--white);
+background-repeat: no-repeat;
+background-position: center;
+  padding: 16px;
+  border-radius: var(--radius100);
+  box-shadow: var(--gray-inner-shadow);
+  font-weight: 500;
+}
+
+.popup-p-gray{
+    color: var(--gray1);
+}
+
+.close-btn{
+    cursor:pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* ========== 🔷TAB MENUS ========== */
+
+/* 📌blue tab */
+
+.light-blue-tab{
+    background-color: var(--blue4);
+    border-radius: 12px 12px 0 0;
+    padding: 4px 8px 2px 8px;
+    color: var(--blue0);
+    box-shadow: 2px 1px 4px 0 rgba(55, 116, 169, 0.29);
+    cursor:pointer;
+    transition: var(--transition);
+}
+
+.light-blue-tab:hover{
+    background-color: var(--blue3);
+}
+
+.dark-blue-tab{
+    background-color: var(--blue0);
+    border-radius: 12px 12px 0 0;
+    padding: 4px 8px 2px 8px;
+    color: var(--blue4);
+    box-shadow: 2px 1px 4px 0 rgba(55, 116, 169, 0.29);
+     cursor:pointer;
+    transition: var(--transition);
+}
+
+.dark-blue-tab:hover{
+    background-color: var(--blue1);
+}
+
+.outlined-blue-tab{
+    background-color: transparent;
+    border: 1px solid var(--blue0);
+     border-radius: 12px 12px 0 0;
+    padding: 4px 8px 2px 8px;
+    color: var(--blue0);
+    box-shadow: 2px 1px 4px 0 rgba(55, 116, 169, 0.29);
+     cursor:pointer;
+    transition: var(--transition);
+}
+
+.outlined-blue-tab:hover{
+    background-color: var(--light-blue-gray);
+}
+
+
+/* ========== 🔷TOGGLE BUTTONS ========== */
+
+/* 📌toggle off */
+
+.toggle-off{
+    width: 48px;
+    height: 26px;
+    background: var(--white);
+    border: 1px solid var(--gray-stroke);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius100);
+    position: relative;
+    cursor:pointer;
+    transition:var(--transition);
+}
+
+.toggle-off::after{
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: var(--radius100);
+    background-color: var(--gray1);
+    position: absolute;
+    box-shadow: var(--box-shadow);
+    top: 1px;
+    left: 1px;
+}
+
+/* 📌toggle on */
+
+.toggle-on{
+    width: 48px;
+    height: 26px;
+    background: var(--blue4);
+    border: 1px solid var(--gray-stroke);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--radius100);
+    position: relative;
+    cursor:pointer;
+    transition: var(--transition);
+}
+
+.toggle-on::after{
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: var(--radius100);
+    background-color: var(--blue0);
+    position: absolute;
+    box-shadow: var(--box-shadow);
+    top: 1px;
+    right: 1px;
+}
+
+/* ========== 🔷SOCIAL LOGINS ========== */
+
+/* 📌login buttons */
+
+.social-login-btn{
+    font-family: var(--primary-font);
+    color: var(--gray0);
+    font-size: 16px;
+font-weight: var(--fw500);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 16px;
+background-color: var(--white);
+border-radius: var(--border-radius);
+border: 1.5px solid var(--gray3);
+padding: 16px 32px 16px 26px;
+box-shadow: var(--box-shadow);
+cursor:pointer;
+transition: var(--transition);
+}
+
+.social-login-btn:hover{
+    background-color: var(--gray-stroke);
+}
+
