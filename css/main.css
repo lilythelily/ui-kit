@@ -31,72 +31,72 @@
   --fw600: 600;
   --fw700: 700;
   --fw800: 800;
-  --border-radius: 8px;
-  --radius4: 4px;
-  --radius10: 10px;
-  --radius100: 100px;
-  --blue-inner-shadow: 4px 4px 4px 0 rgba(255, 255, 255, 0.7) inset,
-    -2px -2px 4px 0 rgba(118, 167, 210, 0.54) inset,
-    2px 2px 4px 0 rgba(118, 167, 210, 0.85) inset;
-  --gray-inner-shadow: 2px 4px 4px 0 rgba(195, 195, 195, 0.43),
-    -2px -2px 8px 0 rgba(195, 195, 195, 0.5) inset,
-    2px 2px 8px 0 rgba(195, 195, 195, 0.2) inset;
-  --box-shadow: 0 4px 4px 0 rgba(209, 209, 209, 0.25);
+  --border-radius: 0.5rem;
+  --radius4: 0.25rem;
+  --radius10: 0.625rem;
+  --radius100: 6.25rem;
+  --blue-inner-shadow: 0.25rem 0.25rem 0.25rem 0 rgba(255, 255, 255, 0.7) inset,
+    -0.125rem -0.125rem 0.25rem 0 rgba(118, 167, 210, 0.54) inset,
+    0.125rem 0.125rem 0.25rem 0 rgba(118, 167, 210, 0.85) inset;
+  --gray-inner-shadow: 0.125rem 0.25rem 0.25rem 0 rgba(195, 195, 195, 0.43),
+    -0.125rem -0.125rem 0.5rem 0 rgba(195, 195, 195, 0.5) inset,
+    0.125rem 0.125rem 0.5rem 0 rgba(195, 195, 195, 0.2) inset;
+  --box-shadow: 0 0.25rem 0.25rem 0 rgba(209, 209, 209, 0.25);
   --transition: 0.4s all ease;
-  --letter-spacing: 1.1px;
+  --letter-spacing: 0.0688rem;
 }
 
 body {
   font-family: var(--primary-font);
-  font-size: 16px;
   font-weight: var(--fw400);
   background-color: var(--light-blue-gray);
   width: 80vw;
-  max-width: 1000px;
+  max-width: 62.5rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 80px auto;
+  margin: 5rem auto;
+  font-size: 16px;
 }
 
 main {
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 
 section {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  margin: 40px 0;
-  border: 1px solid var(--gray3);
-  padding: 16px;
+  margin: 2.5rem 0;
+  border: 0.0625rem solid var(--gray3);
+  padding: 1rem;
   border-radius: var(--border-radius);
   align-items: center;
   justify-content: flex-start;
   background-color: #f1f1f1;
-  border-bottom: 2px solid var(--gray3);
+  border-bottom: 0.125rem solid var(--gray3);
   position: relative;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: var(--letter-spacing);
   color: var(--gray0);
   font-weight: var(--fw600);
 }
 
 h2{
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: var(--fw400);
     color: var(--black);
     background-color: #f1f1f1;
-    padding: 2px 16px;
+    padding: 0.125rem 1rem;
 border-radius: var(--border-radius);
     position: absolute;
-    top: -16px;
-    left: 16px;
+    top: -1rem;
+    left: 1rem;
 }
 /* ========== 📌BUTTONS ========== */
 /* ***** 🔷BLUE FILLED ***** */
@@ -107,7 +107,7 @@ border-radius: var(--border-radius);
   color: var(--blue0);
   font-family: var(--primary-font);
   background-color: var(--blue4);
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--blue-inner-shadow);
   font-weight: 500;
@@ -126,13 +126,13 @@ border-radius: var(--border-radius);
   color: var(--blue0);
   font-family: var(--primary-font);
   background-color: var(--blue4);
-  padding: 16px 26px 16px 32px;
+  padding: 1rem 1.625rem 1rem 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--blue-inner-shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -149,7 +149,7 @@ border-radius: var(--border-radius);
   color: var(--blue0);
   font-family: var(--primary-font);
   background-color: var(--blue4);
-  padding: 6px 16px;
+  padding: 0.375rem 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--blue-inner-shadow);
   font-weight: 500;
@@ -168,13 +168,13 @@ border-radius: var(--border-radius);
   color: var(--blue0);
   font-family: var(--primary-font);
   background-color: var(--blue4);
-  padding: 6px 10px 6px 16px;
+  padding: 0.375rem 0.625rem 0.375rem 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--blue-inner-shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -189,7 +189,7 @@ border-radius: var(--border-radius);
 .blue-icon-square {
   background-color: var(--blue4);
   border: none;
-  padding: 16px;
+  padding: 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--blue-inner-shadow);
   cursor: pointer;
@@ -207,7 +207,7 @@ border-radius: var(--border-radius);
 .blue-icon-square-small {
   background-color: var(--blue4);
   border: none;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: var(--border-radius);
   box-shadow: var(--blue-inner-shadow);
   cursor: pointer;
@@ -225,7 +225,7 @@ border-radius: var(--border-radius);
 .blue-icon-circle {
   background-color: var(--blue4);
   border: none;
-  padding: 16px;
+  padding: 1rem;
   border-radius: var(--radius100);
   box-shadow: var(--blue-inner-shadow);
   cursor: pointer;
@@ -243,7 +243,7 @@ border-radius: var(--border-radius);
 .blue-icon-circle-small {
   background-color: var(--blue4);
   border: none;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: var(--radius100);
   box-shadow: var(--blue-inner-shadow);
   cursor: pointer;
@@ -264,9 +264,9 @@ border-radius: var(--border-radius);
   color: var(--blue0);
   font-family: var(--primary-font);
   background-color: transparent;
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid var(--blue0);
+  border: 0.0938rem solid var(--blue0);
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -283,13 +283,13 @@ border-radius: var(--border-radius);
   color: var(--blue0);
   font-family: var(--primary-font);
   background-color: transparent;
-  padding: 16px 26px 16px 32px;
+  padding: 1rem 1.625rem 1rem 2rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid var(--blue0);
+  border: 0.0938rem solid var(--blue0);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -306,9 +306,9 @@ border-radius: var(--border-radius);
   color: var(--blue0);
   font-family: var(--primary-font);
   background-color: transparent;
-  padding: 6px 16px;
+  padding: 0.375rem 1rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid var(--blue0);
+  border: 0.0938rem solid var(--blue0);
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -325,13 +325,13 @@ border-radius: var(--border-radius);
   color: var(--blue0);
   font-family: var(--primary-font);
   background-color: transparent;
-  padding: 6px 10px 6px 16px;
+  padding: 0.375rem 0.625rem 0.375rem 1rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid var(--blue0);
+  border: 0.0938rem solid var(--blue0);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -345,8 +345,8 @@ border-radius: var(--border-radius);
 
 .blue-icon-square-outlined {
   background-color: transparent;
-  border: 1.5px solid var(--blue0);
-  padding: 16px;
+  border: 0.0938rem solid var(--blue0);
+  padding: 1rem;
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: 500;
@@ -362,8 +362,8 @@ border-radius: var(--border-radius);
 
 .blue-icon-square-outlined-small {
   background-color: transparent;
-  border: 1.5px solid var(--blue0);
-  padding: 8px;
+  border: 0.0938rem solid var(--blue0);
+  padding: 0.5rem;
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: 500;
@@ -379,8 +379,8 @@ border-radius: var(--border-radius);
 
 .blue-icon-outlined-circle {
   background-color: transparent;
-  border: 1.5px solid var(--blue0);
-  padding: 16px;
+  border: 0.0938rem solid var(--blue0);
+  padding: 1rem;
   border-radius: var(--radius100);
   cursor: pointer;
   font-weight: 500;
@@ -397,9 +397,9 @@ border-radius: var(--border-radius);
 .blue-icon-circle-outlined-small {
   background-color: transparent;
   border: none;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: var(--radius100);
-  border: 1.5px solid var(--blue0);
+  border: 0.0938rem solid var(--blue0);
   cursor: pointer;
   font-weight: 500;
   cursor: pointer;
@@ -419,7 +419,7 @@ border-radius: var(--border-radius);
   color: var(--gray1);
   font-family: var(--primary-font);
   background-color: var(--white);
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--gray-inner-shadow);
   font-weight: 500;
@@ -438,13 +438,13 @@ border-radius: var(--border-radius);
   color: var(--gray1);
   font-family: var(--primary-font);
   background-color: var(--white);
-  padding: 16px 26px 16px 32px;
+  padding: 1rem 1.625rem 1rem 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--gray-inner-shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -461,7 +461,7 @@ border-radius: var(--border-radius);
   color: var(--gray1);
   font-family: var(--primary-font);
   background-color: var(--white);
-  padding: 6px 16px;
+  padding: 0.375rem 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--gray-inner-shadow);
   font-weight: 500;
@@ -480,13 +480,13 @@ border-radius: var(--border-radius);
   color: var(--gray1);
   font-family: var(--primary-font);
   background-color: var(--white);
-  padding: 6px 10px 6px 16px;
+  padding: 0.375rem 0.625rem 0.375rem 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--gray-inner-shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -501,7 +501,7 @@ border-radius: var(--border-radius);
 .gray-icon-square {
   background-color: var(--white);
   border: none;
-  padding: 16px;
+  padding: 1rem;
   border-radius: var(--border-radius);
   box-shadow: var(--gray-inner-shadow);
   cursor: pointer;
@@ -519,7 +519,7 @@ border-radius: var(--border-radius);
 .gray-icon-square-small {
   background-color: var(--white);
   border: none;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: var(--border-radius);
   box-shadow: var(--gray-inner-shadow);
   cursor: pointer;
@@ -532,12 +532,18 @@ border-radius: var(--border-radius);
   background-color: var(--light-blue-gray);
 }
 
+.home-btn{
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
 /* 📌gray filled circle icon */
 
 .gray-icon-circle {
   background-color: var(--white);
   border: none;
-  padding: 16px;
+  padding: 1rem;
   border-radius: var(--radius100);
   box-shadow: var(--gray-inner-shadow);
   cursor: pointer;
@@ -555,7 +561,7 @@ border-radius: var(--border-radius);
 .gray-icon-circle-small {
   background-color: var(--white);
   border: none;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: var(--radius100);
   box-shadow: var(--gray-inner-shadow);
   cursor: pointer;
@@ -575,9 +581,9 @@ border-radius: var(--border-radius);
   color: var(--gray1);
   font-family: var(--primary-font);
   background-color: transparent;
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid var(--gray1);
+  border: 0.0938rem solid var(--gray1);
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -593,13 +599,13 @@ border-radius: var(--border-radius);
   color: var(--gray1);
   font-family: var(--primary-font);
   background-color: transparent;
-  padding: 16px 26px 16px 32px;
+  padding: 1rem 1.625rem 1rem 2rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid var(--gray1);
+  border: 0.0938rem solid var(--gray1);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -615,9 +621,9 @@ border-radius: var(--border-radius);
   color: var(--gray1);
   font-family: var(--primary-font);
   background-color: transparent;
-  padding: 6px 16px;
+  padding: 0.375rem 1rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid var(--gray1);
+  border: 0.0938rem solid var(--gray1);
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -634,13 +640,13 @@ border-radius: var(--border-radius);
   color: var(--gray1);
   font-family: var(--primary-font);
   background-color: transparent;
-  padding: 6px 10px 6px 16px;
+  padding: 0.375rem 0.625rem 0.375rem 1rem;
   border-radius: var(--border-radius);
-  border: 1.5px solid var(--gray1);
+  border: 0.0938rem solid var(--gray1);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.5rem;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
@@ -654,8 +660,8 @@ border-radius: var(--border-radius);
 
 .gray-icon-square-outlined {
   background-color: transparent;
-  border: 1.5px solid var(--gray1);
-  padding: 16px;
+  border: 0.0938rem solid var(--gray1);
+  padding: 1rem;
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: 500;
@@ -671,8 +677,8 @@ border-radius: var(--border-radius);
 
 .gray-icon-square-outlined-small {
   background-color: transparent;
-  border: 1.5px solid var(--gray1);
-  padding: 8px;
+  border: 0.0938rem solid var(--gray1);
+  padding: 0.5rem;
   border-radius: var(--border-radius);
   cursor: pointer;
   font-weight: 500;
@@ -688,8 +694,8 @@ border-radius: var(--border-radius);
 
 .gray-icon-outlined-circle {
   background-color: transparent;
-  border: 1.5px solid var(--gray1);
-  padding: 16px;
+  border: 0.0938rem solid var(--gray1);
+  padding: 1rem;
   border-radius: var(--radius100);
   cursor: pointer;
   font-weight: 500;
@@ -705,9 +711,9 @@ border-radius: var(--border-radius);
 
 .gray-icon-circle-outlined-small {
   background-color: transparent;
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: var(--radius100);
-  border: 1.5px solid var(--gray1);
+  border: 0.0938rem solid var(--gray1);
   cursor: pointer;
   font-weight: 500;
   cursor: pointer;
@@ -725,9 +731,9 @@ border-radius: var(--border-radius);
 .light-blue-chip {
   background-color: var(--blue4);
   border-radius: var(--radius4);
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
   color: var(--blue0);
-  border: 1px solid var(--blue1);
+  border: 0.0625rem solid var(--blue1);
   transition: var(--transition);
   cursor: pointer;
 }
@@ -741,7 +747,7 @@ border-radius: var(--border-radius);
 .dark-blue-chip {
   background-color: var(--blue0);
   border-radius: var(--radius4);
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
   color: var(--white);
   transition: var(--transition);
   cursor: pointer;
@@ -756,8 +762,8 @@ border-radius: var(--border-radius);
 .outlined-chip {
   background-color: transparent;
   border-radius: var(--radius4);
-  padding: 4px 8px;
-  border: 1.5px solid var(--blue0);
+  padding: 0.25rem 0.5rem;
+  border: 0.0938rem solid var(--blue0);
   color: var(--blue0);
   transition: var(--transition);
   cursor: pointer;
@@ -771,7 +777,7 @@ border-radius: var(--border-radius);
 
 .section__search-box{
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 /* 📌search box */
@@ -782,16 +788,16 @@ border-radius: var(--border-radius);
 
 .search{
   color: var(--gray2);
-  width: 260px;
-  height: 44px;
-  padding: 2px 2px 2px 16px;
+  width: 16.25rem;
+  height: 2.75rem;
+  padding: 0.125rem 0.125rem 0.125rem 1rem;
   border-radius: var(--radius100);
   background: var(--white);
   box-shadow: var(--box-shadow);
   border: none;
   font-family: var(--primary-font);
   color: var(--gray1);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .search:focus{
@@ -803,17 +809,17 @@ border-radius: var(--border-radius);
 }
 
 .search-icon {
-  width: 40px;
-  height: 40px;
-  padding: 8px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
   background: url("../assets/icons/Search.svg"), var(--blue4);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: var(--radius100);
   box-shadow: var(--blue-inner-shadow),var(--box-shadow);
 position: absolute;
-top: 2px;
-right: 2px;
+top: 0.125rem;
+right: 0.125rem;
 cursor:pointer;
 transition: var(--transition);
 }
@@ -832,16 +838,16 @@ transition: var(--transition);
 
 .subscribe{
   color: var(--gray2);
-  width: 260px;
-  height: 44px;
-  padding: 2px 2px 2px 16px;
+  width: 16.25rem;
+  height: 2.75rem;
+  padding: 0.125rem 0.125rem 0.125rem 1rem;
   border-radius: var(--radius100);
   background: var(--white);
   box-shadow: var(--box-shadow);
   border: none;
   font-family: var(--primary-font);
   color: var(--gray1);
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .subscribe:focus{
@@ -853,17 +859,17 @@ transition: var(--transition);
 }
 
 .send-icon {
-  width: 40px;
-  height: 40px;
-  padding: 8px;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
   background: url("../assets/icons/Send.svg"), var(--blue4);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: var(--radius100);
   box-shadow: var(--blue-inner-shadow),var(--box-shadow);
 position: absolute;
-top: 2px;
-right: 2px;
+top: 0.125rem;
+right: 0.125rem;
 cursor:pointer;
 transition: var(--transition);
 }
@@ -879,26 +885,26 @@ transition: var(--transition);
 /* 📌blue popup */
 
 .blue-popup{
-    width: 160px;
+    width: 10rem;
     display: flex;
     flex-direction: column;
-    padding: 40px 16px 24px 16px;
+    padding: 2.5rem 1rem 1.5rem 1rem;
     background-color: var(--blue5);
     border-radius: var(--radius10);
     align-items: center;
     justify-content: center;
-    gap:24px;
+    gap:1.5rem;
     position:relative;
     box-shadow: var(--box-shadow);
 }
 
 .blue-check-circle{
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
 background: url('../assets/icons/check_blue.svg'), var(--blue4);
 background-repeat: no-repeat;
 background-position: center;
-  padding: 16px;
+  padding: 1rem;
   border-radius: var(--radius100);
   box-shadow: var(--blue-inner-shadow);
   font-weight: 500;
@@ -911,34 +917,34 @@ background-position: center;
 .close-btn{
     cursor:pointer;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625rem;
+    right: 0.625rem;
 }
 
 
 /* 📌gray popup */
 
 .gray-popup{
-    width: 160px;
+    width: 10rem;
     display: flex;
     flex-direction: column;
-    padding: 40px 16px 24px 16px;
+    padding: 2.5rem 1rem 1.5rem 1rem;
     background-color: var(--white);
     border-radius: var(--radius10);
     align-items: center;
     justify-content: center;
-    gap:24px;
+    gap:1.5rem;
     position:relative;
     box-shadow: var(--box-shadow);
 }
 
 .gray-check-circle{
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
 background: url('../assets/icons/check_gray.svg'), var(--white);
 background-repeat: no-repeat;
 background-position: center;
-  padding: 16px;
+  padding: 1rem;
   border-radius: var(--radius100);
   box-shadow: var(--gray-inner-shadow);
   font-weight: 500;
@@ -951,8 +957,8 @@ background-position: center;
 .close-btn{
     cursor:pointer;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625rem;
+    right: 0.625rem;
 }
 
 
@@ -962,10 +968,10 @@ background-position: center;
 
 .light-blue-tab{
     background-color: var(--blue4);
-    border-radius: 12px 12px 0 0;
-    padding: 4px 8px 2px 8px;
+    border-radius: 0.75rem 0.75rem 0 0;
+    padding: 0.25rem 0.5rem 0.125rem 0.5rem;
     color: var(--blue0);
-    box-shadow: 2px 1px 4px 0 rgba(55, 116, 169, 0.29);
+    box-shadow: 0.125rem 0.0625rem 0.25rem 0 rgba(55, 116, 169, 0.29);
     cursor:pointer;
     transition: var(--transition);
 }
@@ -976,10 +982,10 @@ background-position: center;
 
 .dark-blue-tab{
     background-color: var(--blue0);
-    border-radius: 12px 12px 0 0;
-    padding: 4px 8px 2px 8px;
+    border-radius: 0.75rem 0.75rem 0 0;
+    padding: 0.25rem 0.5rem 0.125rem 0.5rem;
     color: var(--blue4);
-    box-shadow: 2px 1px 4px 0 rgba(55, 116, 169, 0.29);
+    box-shadow: 0.125rem 0.0625rem 0.25rem 0 rgba(55, 116, 169, 0.29);
      cursor:pointer;
     transition: var(--transition);
 }
@@ -990,11 +996,11 @@ background-position: center;
 
 .outlined-blue-tab{
     background-color: transparent;
-    border: 1px solid var(--blue0);
-     border-radius: 12px 12px 0 0;
-    padding: 4px 8px 2px 8px;
+    border: 0.0625rem solid var(--blue0);
+     border-radius: 0.75rem 0.75rem 0 0;
+    padding: 0.25rem 0.5rem 0.125rem 0.5rem;
     color: var(--blue0);
-    box-shadow: 2px 1px 4px 0 rgba(55, 116, 169, 0.29);
+    box-shadow: 0.125rem 0.0625rem 0.25rem 0 rgba(55, 116, 169, 0.29);
      cursor:pointer;
     transition: var(--transition);
 }
@@ -1009,10 +1015,10 @@ background-position: center;
 /* 📌toggle off */
 
 .toggle-off{
-    width: 48px;
-    height: 26px;
+    width: 3rem;
+    height: 1.625rem;
     background: var(--white);
-    border: 1px solid var(--gray-stroke);
+    border: 0.0625rem solid var(--gray-stroke);
     box-shadow: var(--box-shadow);
     border-radius: var(--radius100);
     position: relative;
@@ -1022,23 +1028,23 @@ background-position: center;
 
 .toggle-off::after{
     content: '';
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height: 1.375rem;
     border-radius: var(--radius100);
     background-color: var(--gray1);
     position: absolute;
     box-shadow: var(--box-shadow);
-    top: 1px;
-    left: 1px;
+    top: 0.0625rem;
+    left: 0.0625rem;
 }
 
 /* 📌toggle on */
 
 .toggle-on{
-    width: 48px;
-    height: 26px;
+    width: 3rem;
+    height: 1.625rem;
     background: var(--blue4);
-    border: 1px solid var(--gray-stroke);
+    border: 0.0625rem solid var(--gray-stroke);
     box-shadow: var(--box-shadow);
     border-radius: var(--radius100);
     position: relative;
@@ -1048,14 +1054,14 @@ background-position: center;
 
 .toggle-on::after{
     content: '';
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height: 1.375rem;
     border-radius: var(--radius100);
     background-color: var(--blue0);
     position: absolute;
     box-shadow: var(--box-shadow);
-    top: 1px;
-    right: 1px;
+    top: 0.0625rem;
+    right: 0.0625rem;
 }
 
 /* ========== 🔷SOCIAL LOGINS ========== */
@@ -1065,16 +1071,16 @@ background-position: center;
 .social-login-btn{
     font-family: var(--primary-font);
     color: var(--gray0);
-    font-size: 16px;
+    font-size: 1rem;
 font-weight: var(--fw500);
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 16px;
+gap: 1rem;
 background-color: var(--white);
 border-radius: var(--border-radius);
-border: 1.5px solid var(--gray3);
-padding: 16px 32px 16px 26px;
+border: 0.0938rem solid var(--gray3);
+padding: 1rem 2rem 1rem 1.625rem;
 box-shadow: var(--box-shadow);
 cursor:pointer;
 transition: var(--transition);
