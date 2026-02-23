@@ -7,7 +7,108 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <h1>UI Kit Components</h1>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="home-bundle">
+      <a href="../index.html">
+      <button type="button" class="gray-icon-square-small home-btn">
+        <img src="../assets/icons/home-04.svg" alt="icon" /></button
+    ></a>
+     <button type="button" class="btn-filled-gray-small-icon">
+        UI Kit Bundle
+        <div class="bundle-imgs">
+        <img
+          src="./assets/icons/figma-1-logo-svg-vector.svg"
+          alt="figma" class="header-icon" id="figma-icon"
+        /><img
+          src="./assets/icons/html_5.png"
+          alt="html" class="header-icon"
+        />
+        <img
+          src="./assets/icons/css_3.png"
+          alt="css" class="header-icon"
+        />
+        <img
+          src="./assets/icons/js-logo.png"
+          alt="javascript" class="header-icon" id="figma-icon"
+        /></div>
+      </button></div>
+      <nav>
+        <ul class="index-ul">
+          <a href="./html/cards.html"><li>Cards</li></a>
+           <a href="./html/figures.html"><li>Data cards</li></a>
+            <a href="./html/testimonials.html"><li>Testimonials</li></a>
+             <a href="./html/header.html"><li>Header</li></a>
+              <a href="./html/footer.html"><li>Footer</li></a> <a href="./html/pricing.html"><li>Pricing</li></a>
+              <a href="./html/login.html"><li>Login form</li></a>
+              <a href="./html/contact.html"><li>Contact form</li></a>
+                 <a href="./html/how-it-works.html">
+               <button type="button" class="btn-outlined-gray-small">
+        How It Works
+      </button></a>
+   
+              <button type="button" class="btn-filled-blue-small-icon">
+        Download Files<img src="./assets/icons/arrow_forward.svg" alt="icon" />
+      </button>
+    </ul>
+  </nav>
+  <img src="./assets/icons/menu-05.svg" alt="menu" class="main-hamburger-icon">
+
+    <!-- === hamburger menu panel === -->
+    <div class="main-hamburger-menu main-hide">
+      <img
+        src="../assets/icons/close.svg"
+        alt="close"
+        class="main-hamburger-close"
+      />
+      <ul class="main-hamburger-list">
+        <li>
+          <a href="./html/cards.html" class="hamburger-href">Cards</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+        <li>
+          <a href="./html/figures.html" class="hamburger-href">Data cards</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+        <li>
+          <a href="./html/testimonials.html" class="hamburger-href">Testimonials</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+        <li>
+          <a href="./html/header.html" class="hamburger-href">Header</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+        <li>
+          <a href="./html/footer.html" class="hamburger-href">Footer</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+         <li>
+          <a href="./html/pricing.html" class="hamburger-href">Pricing</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+         <li>
+          <a href="./html/login.html" class="hamburger-href">Login form</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+         <li>
+          <a href="./html/contact.html" class="hamburger-href">Contact form</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+                 <li>
+          <a href="./html/how-it-works.html" class="hamburger-href">How it works</a
+          ><img src="../assets/icons/chevron-right.svg" alt="right" />
+        </li>
+        <button type="button" class="btn-filled-blue-small-icon" id="main-hamburger-contact-btn">
+        Download Files<img src="./assets/icons/arrow_forward.svg" alt="icon" />
+      </button>
+      </ul>
+      
+    </div>
+
+
+      </div>
+    </header>
+    <h1 class="main-h1">UI Kit Components</h1>
 <main>
     <!-- === BUTTONS === -->
     <!-- **** BLUE FILLED **** -->
@@ -122,7 +223,7 @@
         <h2>Gray Outlined Buttons</h2>
       <!-- gray outlined button -->
       <button type="button" class="btn-outlined-gray">Explore More</button>
-      <!-- gray filled button with icon -->
+      <!-- gray outlined button with icon -->
       <button type="button" class="btn-outlined-gray-icon">
         Explore More<img
           src="./assets/icons/arrow_forward_gray.svg"
@@ -212,11 +313,10 @@
 
 <!-- === TOGGLE BUTTON === -->
 <section class="toggle-btn">
-    <h2>Toggle Buttons</h2>
-    <!-- toggle off button -->
-    <div class="toggle-off"></div>
-    <!-- toggle on button -->
-    <div class="toggle-on"></div>
+    <h2>Toggle Button</h2>
+
+    <div class="toggle-off"><div class="toggle-circle"></div></div>
+
 </section>
 
 <!-- === SOCIAL LOGIN BUTTON === -->
@@ -230,6 +330,11 @@
     <button type="button" class="social-login-btn" id="linkedin"><img src="./assets/icons/linkedin_blue.svg" alt="linkedin">Sign in with LinkedIn</button>
 </section>
 
+     <button type="button" class="btn-filled-blue-icon" id="bottom-download-btn">
+        Download Figma & Code Files<img src="./assets/icons/arrow_forward.svg" alt="icon" />
+      </button>
+
 </main>
+<script src="./js/components.js"></script>
   </body>
 </html>
