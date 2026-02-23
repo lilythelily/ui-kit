@@ -59,7 +59,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   width: 90%;
   max-width: 75rem;
-  margin: 0 auto;
+  margin: 6.25rem auto;
   gap: 1.5rem;
   align-items: center;
   justify-content: space-between;
@@ -133,4 +133,11 @@ article {
   .card-img {
     height: 17.5rem;
   }
+}
+
+@media (max-width: 600px){
+  .section__cards{
+    width: 100%;
+  }
+  
 }

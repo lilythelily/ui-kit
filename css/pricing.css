@@ -58,7 +58,7 @@ body {
 .section__pricing {
   width: 90%;
   max-width: 75rem;
-  margin: 0 auto;
+  margin: 6.25rem auto;
   background: transparent;
 }
 
@@ -177,6 +177,9 @@ body {
 /* === 📌 responsive === */
 
 @media (max-width: 68.75rem) {
+    .section__pricing {
+  margin: 0 auto;
+}
   .card-wrapper {
     gap: 1rem;
   }
