@@ -45,3 +45,4 @@ submitBtn.addEventListener('click', () => {
 modalClose.addEventListener('click', () => {
     toggleDisplay(thanksModal);
 })
+
