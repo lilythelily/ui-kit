@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Kit Components</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/how-it-works.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <div class="home-bundle">
+          <a href="../index.html">
+            <button type="button" class="gray-icon-square-small home-btn">
+              <img src="../assets/icons/home-04.svg" alt="icon" /></button
+          ></a>
+          <button type="button" class="btn-filled-gray-small-icon">
+            UI Kit Bundle
+            <div class="bundle-imgs">
+              <img
+                src="../assets/icons/figma-1-logo-svg-vector.svg"
+                alt="figma"
+                class="header-icon"
+                id="figma-icon"
+              /><img
+                src="../assets/icons/html_5.png"
+                alt="html"
+                class="header-icon"
+              />
+              <img
+                src="../assets/icons/css_3.png"
+                alt="css"
+                class="header-icon"
+              />
+              <img
+                src="../assets/icons/js-logo.png"
+                alt="javascript"
+                class="header-icon"
+                id="figma-icon"
+              />
+            </div>
+          </button>
+        </div>
+        <nav>
+          <ul class="index-ul">
+            <a href="../html/cards.html"><li>Cards</li></a>
+            <a href="../html/figures.html"><li>Data cards</li></a>
+            <a href="../html/testimonials.html"><li>Testimonials</li></a>
+            <a href="../html/header.html"><li>Header</li></a>
+            <a href="../html/footer.html"><li>Footer</li></a>
+            <a href="../html/pricing.html"><li>Pricing</li></a>
+            <a href="../html/login.html"><li>Login form</li></a>
+            <a href="../html/contact.html"><li>Contact form</li></a>
+            <a href="../html/how-it-works.html">
+              <button type="button" class="btn-outlined-gray-small">
+                How It Works
+              </button></a
+            >
+
+            <button type="button" class="btn-filled-blue-small-icon">
+              Download Files<img
+                src="../assets/icons/arrow_forward.svg"
+                alt="icon"
+              />
+            </button>
+          </ul>
+        </nav>
+        <img
+          src="../assets/icons/menu-05.svg"
+          alt="menu"
+          class="main-hamburger-icon"
+        />
+
+        <!-- === hamburger menu panel === -->
+        <div class="main-hamburger-menu main-hide">
+          <img
+            src="../assets/icons/close.svg"
+            alt="close"
+            class="main-hamburger-close"
+          />
+          <ul class="main-hamburger-list">
+            <li>
+              <a href="../html/cards.html" class="hamburger-href">Cards</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <li>
+              <a href="../html/figures.html" class="hamburger-href"
+                >Data cards</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <li>
+              <a href="../html/testimonials.html" class="hamburger-href"
+                >Testimonials</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <li>
+              <a href="../html/header.html" class="hamburger-href">Header</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <li>
+              <a href="../html/footer.html" class="hamburger-href">Footer</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <li>
+              <a href="../html/pricing.html" class="hamburger-href">Pricing</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <li>
+              <a href="../html/login.html" class="hamburger-href">Login form</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <li>
+              <a href="../html/contact.html" class="hamburger-href"
+                >Contact form</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <li>
+              <a href="../html/how-it-works.html" class="hamburger-href"
+                >How it works</a
+              ><img src="../assets/icons/chevron-right.svg" alt="right" />
+            </li>
+            <button
+              type="button"
+              class="btn-filled-blue-small-icon"
+              id="main-hamburger-contact-btn"
+            >
+              Download Files<img
+                src="../assets/icons/arrow_forward.svg"
+                alt="icon"
+              />
+            </button>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__how">
+      <h1 class="how-h1">How It Works</h1>
+
+      <!-- === 📒 figma file === -->
+      <div class="how-subheader">
+        <img
+          src="../assets/icons/figma-1-logo-svg-vector.svg"
+          alt="figma"
+          class="file-icon"
+        />
+        Figma Design File
+      </div>
+      <hr class="how-hr" />
+      <ol>
+        <li>
+          <a href="#">Download</a> Figma (.fig) file <a href="#">here</a>.
+        </li>
+        <li>Import Figma (.fig) local file into your Figma project folder.</li>
+        <div class="how-img"></div>
+
+        <li>
+          Adjust variables (color palette, font sizes, etc.) in the [Variables]
+          panel.
+        </li>
+        <div class="how-img" id="img-variables"></div>
+      </ol>
+
+      <!-- === 📒 source code === -->
+
+      <div class="how-subheader">
+        <div class="how-file-icons">
+          <img
+            src="../assets/icons/html_5.png"
+            alt="html"
+            class="file-icon"
+          /><img
+            src="../assets/icons/css_3.png"
+            alt="css"
+            class="file-icon"
+          /><img
+            src="../assets/icons/js-logo.png"
+            alt="javascript"
+            class="file-icon"
+          />
+        </div>
+        Source Code Files
+      </div>
+      <hr class="how-hr" />
+      <ol>
+        <li>
+          <a href="#">Download</a> HTML (.html), CSS (.css), JavaScript (.js)
+          files <a href="#">here</a>.
+        </li>
+        <li>Import code files into your project folder. Open the folder in VS Code.</li>
+        <div class="how-img" id="img-html"></div>
+
+        <li>File structure:</li>
+        <div class="img-text">
+          <div class="structure-img"></div>
+          <div class="structure-list-wrapper">
+            <p class="structure-item">
+              <span class="item-span">index.html</span>Main page with UI assets
+            </p>
+            <p class="structure-item">
+              <span class="item-span">html folder</span>HTML code files for each
+              section
+            </p>
+            <p class="structure-item">
+              <span class="item-span">css folder</span>CSS code files for each
+              section
+            </p>
+            <p class="structure-item">
+              <span class="item-span">js folder</span>JavaScript code files for
+              each section
+            </p>
+            <p class="structure-item">
+              <span class="item-span">assets folder</span>Images and Icons
+            </p>
+          </div>
+        </div>
+
+        <li>Edit variables at CSS :root as needed.</li>
+        <div class="how-img" id="img-root"></div>
+      </ol>
+
+      <!-- === 📒 Example === -->
+      <div class="how-subheader">
+        <img
+          src="../assets/icons/arrow_forward.svg"
+          alt="arrow"
+          class="file-icon"
+        />
+        Example: Find a code block for <span class="span-salmon">Testimonials</span> section
+      </div>
+      <hr class="how-hr" />
+      <div class="how-img" id="img-example"></div>
+      <ol>
+        <li>
+          Open the "testimonials.html" file in the "html" folder. Copy and Paste
+          the code block into your project file. Update the text and images as
+          required.
+        </li>
+        <div class="how-img" id="img-testimonials-html"></div>
+        <li>
+          Open the "main.css" and "testimonials.css" file in the "css" folder.
+          Copy and Paste the code block into your project file. Adjust the code as required.
+        </li>
+        <div class="how-img" id="img-testimonials-css"></div>
+      </ol>
+    </section>
+    <script src="../js/common.js"></script>
+  </body>
+</html>
