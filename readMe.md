@@ -56,9 +56,6 @@ Each component section is self-contained in separate files (e.g.: "footer.html" 
 
 3.  **Path Adjustment** Ensure your image paths match your local directory. 
 
-- Default path: <img src="../assets/building1.webp">
-- Update to: <img src="your-path/assets/building1.webp">
-
 
 ## License
 
