@@ -1,5 +1,8 @@
 # UI Kit Bundle (v1.0.0) Documentation
 
+![page](https://github.com/user-attachments/assets/8932e183-46d7-4371-9075-7db6f6d913b6)
+
+
 ## Overview
 
 UI Kit Bundle containing essential UI components and modular sections. This comprehensive package offers a Figma design file (.fig), hand-coded source files (.html/.css/.js) and the preview live site. 
