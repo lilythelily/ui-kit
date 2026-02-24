@@ -17,3 +17,24 @@ menuIcon.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
   displayMenu();
 })
+
+
+// === 📌 button navigation to external URL===
+
+const urlBtn = document.querySelector('.urlBtn');
+const urlBtnSmall = document.querySelector('.urlBtn-small');
+const urlHamburger = document.querySelector("#main-hamburger-contact-btn");
+
+
+urlBtn.addEventListener('click', () => {
+  window.open('https://payhip.com/b/bVzwD', '_blank')
+});
+
+urlBtnSmall.addEventListener("click", () => {
+  window.open("https://payhip.com/b/bVzwD", "_blank");
+});
+
+urlHamburger.addEventListener("click", () => {
+  window.open("https://payhip.com/b/bVzwD", "_blank");
+});
+

@@ -18,6 +18,30 @@ closeMenu.addEventListener('click', () => {
   displayMenu();
 })
 
+// === 📌 button navigation to external URL===
+
+const urlBtn = document.querySelector('.urlBtn');
+const urlBtnSmall = document.querySelector('.urlBtn-small');
+const urlHamburger = document.querySelector("#main-hamburger-contact-btn");
+const urlBtnIcon = document.querySelector("#bottom-download-btn");
+
+urlBtn.addEventListener('click', () => {
+  window.open('https://payhip.com/b/bVzwD', '_blank')
+});
+
+urlBtnSmall.addEventListener("click", () => {
+  window.open("https://payhip.com/b/bVzwD", "_blank");
+});
+
+urlHamburger.addEventListener("click", () => {
+  window.open("https://payhip.com/b/bVzwD", "_blank");
+});
+
+urlBtnIcon.addEventListener("click", () => {
+  window.open("https://payhip.com/b/bVzwD", "_blank");
+});
+
+
 // === 📌 toggle button control ===
 
 const toggleBtn = document.querySelector(".toggle-off");
